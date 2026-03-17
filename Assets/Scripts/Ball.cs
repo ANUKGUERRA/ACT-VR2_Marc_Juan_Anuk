@@ -15,7 +15,6 @@ public class MagnusEffect : MonoBehaviour
 
     void FixedUpdate()
     {
-        Debug.Log(rb.angularVelocity);
         var direction = Vector3.Cross(rb.angularVelocity, rb.linearVelocity);
         var magnitude = 4 / 3f * Mathf.PI * airDensity * Mathf.Pow(radius, 3);
         rb.AddForce(magnitude * direction);
