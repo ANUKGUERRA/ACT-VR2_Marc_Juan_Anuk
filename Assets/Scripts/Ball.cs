@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
-public class Ball : MonoBehaviour
+public class MagnusEffect : MonoBehaviour
 {
     public float radius = 0.5f;
     public float airDensity = 0.1f;
