@@ -6,7 +6,12 @@ public class BallSpawn : MonoBehaviour
     [SerializeField] Transform spawnPoint;
     [SerializeField] InputAction action;
     [SerializeField] GameObject ballPrefab;
+    [SerializeField] Transform controllerTransform;
+
     GameObject ball;
+    Rigidbody rb;
+
+    private bool ballInHand = false;
 
     private void OnEnable()
     {
@@ -24,17 +29,29 @@ public class BallSpawn : MonoBehaviour
         action.Disable();
     }
 
+    private void Update()
+    {
+        if (ballInHand)
+        {
+            rb.MovePosition(controllerTransform.position);
+            rb.MoveRotation(controllerTransform.rotation);
+            Debug.Log(rb.linearVelocity);
+        }
+    }
+
     private void OnTriggerPressed(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Ball spawn");
-        ball = Instantiate(ballPrefab, spawnPoint);
-        ball.GetComponent<Rigidbody>().useGravity = false;
+        ballInHand = true;
+        ball = Instantiate(ballPrefab);
+        rb = ball.GetComponent<Rigidbody>();
+        rb.useGravity = false;
+        rb.isKinematic = true;
     }
 
     private void OnTriggerReleased(InputAction.CallbackContext ctx)
     {
-        Debug.Log("Ball drop");
-        ball.GetComponent<Rigidbody>().useGravity = true;
-        ball.transform.SetParent(null);
+        ballInHand = false;
+        rb.useGravity = true;
+        rb.isKinematic = false;
     }
 }
