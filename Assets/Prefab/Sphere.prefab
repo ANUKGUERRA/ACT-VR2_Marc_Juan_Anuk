@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1981627141028713807}
   - component: {fileID: 5472927089708574065}
   - component: {fileID: 7895012261626525506}
+  - component: {fileID: 5702821669234184507}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -154,3 +155,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   radius: 0
   airDensity: 0
+--- !u!114 &5702821669234184507
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697368348496473981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00d30bfd5f2aae4785138c3bf07ff20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EfectoColision
+  particulasPrefab: {fileID: 4278835312560101625, guid: 58ce4f016c6a1ce4dbcd0a685eccf781, type: 3}
