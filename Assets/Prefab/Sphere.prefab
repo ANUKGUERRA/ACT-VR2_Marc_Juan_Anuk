@@ -167,4 +167,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d00d30bfd5f2aae4785138c3bf07ff20, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EfectoColision
-  particulasPrefab: {fileID: 4278835312560101625, guid: 58ce4f016c6a1ce4dbcd0a685eccf781, type: 3}
+  particulasPrefab: {fileID: 1867150448165054267, guid: 9164eadb0c30e0a4b9e28f7d474ec435, type: 3}
