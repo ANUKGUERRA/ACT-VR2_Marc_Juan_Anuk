@@ -50,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -4800,7 +4800,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.18511, y: 0.809, z: -0.12347}
-  m_LocalScale: {x: 0.049458068, y: 0.049458068, z: 0.049458068}
+  m_LocalScale: {x: 0.056242753, y: 0.056242753, z: 0.056242753}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 2183566719325620795}
@@ -4899,7 +4899,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1867150448165054267}
   serializedVersion: 8
-  lengthInSec: 0.5
+  lengthInSec: 0.3
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 1
@@ -4908,7 +4908,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -9771,7 +9771,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -10944,7 +10944,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 0.98094714, b: 0.80566037, a: 1}
-        key1: {r: 1, g: 0.8969129, b: 0.65471697, a: 0.8980392}
+        key1: {r: 1, g: 0.8969129, b: 0.65471697, a: 0.9529412}
         key2: {r: 1, g: 0.87358487, b: 0.87358487, a: 0.039215688}
         key3: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
         key4: {r: 1, g: 0, b: 0, a: 0.039215688}
@@ -14524,7 +14524,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -15733,7 +15733,7 @@ ParticleSystem:
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
-        key1: {r: 1, g: 0.9784501, b: 0.6924528, a: 0.9098039}
+        key1: {r: 1, g: 0.9784501, b: 0.6924528, a: 0.9647059}
         key2: {r: 1, g: 1, b: 1, a: 0.039215688}
         key3: {r: 0.654902, g: 0, b: 0, a: 0.039215688}
         key4: {r: 1, g: 0, b: 0, a: 0.039215688}
@@ -19449,7 +19449,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -24202,7 +24202,7 @@ ParticleSystem:
   emitterVelocityMode: 0
   looping: 0
   prewarm: 0
-  playOnAwake: 0
+  playOnAwake: 1
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:

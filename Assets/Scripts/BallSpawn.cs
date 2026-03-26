@@ -35,7 +35,7 @@ public class BallSpawn : MonoBehaviour
         {
             rb.MovePosition(controllerTransform.position);
             rb.MoveRotation(controllerTransform.rotation);
-            Debug.Log(rb.linearVelocity);
+            //Debug.Log(rb.linearVelocity); 
         }
     }
 
