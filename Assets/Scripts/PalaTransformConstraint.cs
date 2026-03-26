@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class PalaDebug : MonoBehaviour
+public class PalaTransformConstraint : MonoBehaviour
 {
     [SerializeField] Transform controllerTransform;
     private Rigidbody rb;
@@ -16,4 +16,10 @@ public class PalaDebug : MonoBehaviour
         rb.MovePosition(controllerTransform.position);
         rb.MoveRotation(controllerTransform.rotation);
     }
+
+    public Transform GetControllerTransform()
+    {
+        return controllerTransform;
+    }
+
 }
