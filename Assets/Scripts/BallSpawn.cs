@@ -63,7 +63,6 @@ public class BallSpawn : MonoBehaviour
 
         rb.isKinematic = false;
         rb.useGravity = true;
-
         rb.linearVelocity = velocity;
     }
 }
