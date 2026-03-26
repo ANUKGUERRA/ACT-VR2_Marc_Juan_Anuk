@@ -6,6 +6,6 @@ public class IaRival : MonoBehaviour
     public void iaDeflect(Vector3 ballPosition, Vector3 ballDirection, Rigidbody rb)
     {
         Vector3 intersectionPoint;
-        intersectionPoint = Vector3.Dot(ballPosition, rb.angularVelocity);
+        //intersectionPoint = Vector3.Dot(ballPosition, rb.angularVelocity);
     }
 }

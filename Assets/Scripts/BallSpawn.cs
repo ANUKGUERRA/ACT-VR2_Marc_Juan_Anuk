@@ -11,6 +11,9 @@ public class BallSpawn : MonoBehaviour
     GameObject ball;
     Rigidbody rb;
 
+    private Vector3 lastPosition;
+    private Vector3 velocity;
+
     private bool ballInHand = false;
 
     private void OnEnable()
@@ -35,7 +38,10 @@ public class BallSpawn : MonoBehaviour
         {
             rb.MovePosition(controllerTransform.position);
             rb.MoveRotation(controllerTransform.rotation);
-            Debug.Log(rb.linearVelocity);
+
+            // calcular velocidad manual
+            velocity = (controllerTransform.position - lastPosition) / Time.deltaTime;
+            lastPosition = controllerTransform.position;
         }
     }
 
@@ -44,14 +50,20 @@ public class BallSpawn : MonoBehaviour
         ballInHand = true;
         ball = Instantiate(ballPrefab);
         rb = ball.GetComponent<Rigidbody>();
+
         rb.useGravity = false;
         rb.isKinematic = true;
+
+        lastPosition = controllerTransform.position;
     }
 
     private void OnTriggerReleased(InputAction.CallbackContext ctx)
     {
         ballInHand = false;
-        rb.useGravity = true;
+
         rb.isKinematic = false;
+        rb.useGravity = true;
+
+        rb.linearVelocity = velocity;
     }
 }
