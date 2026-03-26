@@ -101,9 +101,10 @@ GameObject:
   - component: {fileID: 1981627141028713807}
   - component: {fileID: 5472927089708574065}
   - component: {fileID: 7895012261626525506}
+  - component: {fileID: -3650800517474755392}
   m_Layer: 0
   m_Name: Sphere
-  m_TagString: Untagged
+  m_TagString: Pelota
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -186,3 +187,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   radius: 0
   airDensity: 0
+--- !u!114 &-3650800517474755392
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4697368348496473981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d00d30bfd5f2aae4785138c3bf07ff20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::EfectoColision
+  particulasPrefab: {fileID: 1867150448165054267, guid: 9164eadb0c30e0a4b9e28f7d474ec435, type: 3}
