@@ -2,46 +2,36 @@ using UnityEngine;
 
 public class Puntuacion : MonoBehaviour
 {
-    bool lastSideLeft;
-    uint leftSidePoints;
-    uint rightSidePoints;
-    private void OnCollisionEnter(Collision collision)
-    {
-        if(collision.gameObject.name == "LeftSide")
-        {
-            if (lastSideLeft) 
-            {
-                rightSidePoints ++;
-            }
-            lastSideLeft = true;
-            Debug.Log("LeftSide");
-        }
-        if (collision.gameObject.name == "RightSide")
-        {
-            if (!lastSideLeft)
-            {
-                leftSidePoints ++;
-            }
-            lastSideLeft = false;
+    public static Puntuacion Instance { get; private set; }
+    private int goal = 5;
+    private int intentos = 20;
+    private int score = 0;
 
-            Debug.Log("RightSide");
-        }
-        if (collision.gameObject.name == "Net")
+
+    private void Awake()
+    {
+        if (Instance != null && Instance != this)
         {
-            Debug.Log("Net");
+            DestroyImmediate(this);
+            return;
         }
-        if (collision.gameObject.name == "out")
-        {
-            if (lastSideLeft) 
-            {
-                rightSidePoints ++;
-            }
-            else
-            {
-                leftSidePoints++;
-            }
-        }
+
+        Instance = this;
     }
 
+    private void OnEnable()
+    {
+        TargetLogic.OnTargetHit += AddPoint;
+    }
 
+    private void OnDisable()
+    {
+        TargetLogic.OnTargetHit -= AddPoint;
+    }
+
+    private void AddPoint()
+    {
+        score++;
+        Debug.Log("Score: " + score);
+    }
 }
