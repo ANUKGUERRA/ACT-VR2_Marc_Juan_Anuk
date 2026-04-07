@@ -18,5 +18,6 @@ public class MagnusEffect : MonoBehaviour
         var direction = Vector3.Cross(rb.angularVelocity, rb.linearVelocity);
         var magnitude = 4 / 3f * Mathf.PI * airDensity * Mathf.Pow(radius, 3);
         rb.AddForce(magnitude * direction);
+        if (rb.IsSleeping()) Debug.Log("Sleeping");
     }
 }
