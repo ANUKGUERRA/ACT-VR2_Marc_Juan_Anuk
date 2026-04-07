@@ -7278,69 +7278,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1880407745}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1518958264
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1518958266}
-  - component: {fileID: 1518958265}
-  m_Layer: 0
-  m_Name: AudioManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1518958265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518958264}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9a6610d2e704f1648819acc8d7460285, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioEventEmitter
-  CollisionTag: 
-  EventReference:
-    Guid:
-      Data1: -1990936602
-      Data2: 1333700703
-      Data3: -89808762
-      Data4: 1739939341
-    Path: event:/Mii Channel - Plaza Theme (HQ) - Rhythm Root
-  Event: 
-  EventPlayTrigger: 1
-  EventStopTrigger: 0
-  AllowFadeout: 1
-  TriggerOnce: 0
-  Preload: 0
-  NonRigidbodyVelocity: 0
-  Params: []
-  OverrideAttenuation: 0
-  OverrideMinDistance: 1
-  OverrideMaxDistance: 20
---- !u!4 &1518958266
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1518958264}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2, y: 0, z: 0.242}
-  m_LocalScale: {x: 2.0536, y: 2.0536, z: 2.0536}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1528658422
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8334,8 +8271,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   radius: 0.5
   airDensity: 0.64
-  boardEmitter: {fileID: 1564146518}
-  PalaEmitter: {fileID: 0}
 --- !u!1 &1609860361
 GameObject:
   m_ObjectHideFlags: 0
@@ -11702,6 +11637,63 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2aeba4a37f22ea64cb397227b0d1fa3e, type: 3}
+--- !u!1001 &2173945013727039005
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2158568252610894426, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.242
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -11714,7 +11706,7 @@ SceneRoots:
   - {fileID: 1656931006}
   - {fileID: 850011656}
   - {fileID: 419423675}
-  - {fileID: 1518958266}
+  - {fileID: 2173945013727039005}
   - {fileID: 2008714901}
   - {fileID: 1437667383}
   - {fileID: 454367526}
