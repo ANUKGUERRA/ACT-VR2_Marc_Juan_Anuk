@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -7,6 +8,8 @@ public class MagnusEffect : MonoBehaviour
     public float airDensity = 0.1f;
 
     private Rigidbody rb;
+    [SerializeField] StudioEventEmitter boardEmitter;
+    [SerializeField] StudioEventEmitter PalaEmitter;
 
     void Awake()
     {
@@ -20,4 +23,19 @@ public class MagnusEffect : MonoBehaviour
         rb.AddForce(magnitude * direction);
         if (rb.IsSleeping()) Debug.Log("Sleeping");
     }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if(collision.gameObject.tag == "Board")
+        {
+            boardEmitter.Play();
+        }
+
+        if (collision.gameObject.tag == "Pala")
+        {
+            PalaEmitter.Play();
+        }
+        
+    }
+
 }

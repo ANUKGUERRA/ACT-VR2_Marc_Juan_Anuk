@@ -1,3 +1,4 @@
+using FMODUnity;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Inputs.Haptics;
@@ -5,6 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class VibracionPala : MonoBehaviour
 {
+   
     [Range(0, 1)] public float intensidad = 0.5f;
     public float duracion = 0.1f;
 
@@ -18,6 +20,8 @@ public class VibracionPala : MonoBehaviour
             {
                 constraint.GetControllerTransform().GetComponent<HapticImpulsePlayer>().SendHapticImpulse(intensidad, duracion);
             }
+
+           
 
         }
     }
