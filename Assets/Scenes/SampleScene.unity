@@ -893,7 +893,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8135023674665499069, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8518324294302271954, guid: 58d0a4ac86f2348deb02f3880c71378e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3720,8 +3720,8 @@ GameObject:
   m_Component:
   - component: {fileID: 789153249}
   - component: {fileID: 789153246}
-  - component: {fileID: 789153248}
   - component: {fileID: 789153247}
+  - component: {fileID: 789153250}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3881,14 +3881,6 @@ MonoBehaviour:
       m_Action: Rotation
       m_Flags: 0
     m_Flags: 0
---- !u!81 &789153248
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 789153245}
-  m_Enabled: 1
 --- !u!4 &789153249
 Transform:
   m_ObjectHideFlags: 0
@@ -3904,6 +3896,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 812788515}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &789153250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 789153245}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86c6556701af9e04380698b89f691b6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: FMODUnity::FMODUnity.StudioListener
+  nonRigidbodyVelocity: 0
+  attenuationObject: {fileID: 0}
 --- !u!1 &807279264
 GameObject:
   m_ObjectHideFlags: 0
@@ -4827,6 +4833,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3089718897639382447, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
     - target: {fileID: 3652099171535360867, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
       propertyPath: m_Interpolate
       value: 1
@@ -4836,6 +4846,10 @@ PrefabInstance:
       value: MesaTabletennis (1)
       objectReference: {fileID: 0}
     - target: {fileID: 5019489277206279637, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
+      propertyPath: m_TagString
+      value: Board
+      objectReference: {fileID: 0}
+    - target: {fileID: 5296656607340905073, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
       propertyPath: m_TagString
       value: Board
       objectReference: {fileID: 0}
@@ -8013,7 +8027,6 @@ GameObject:
   - component: {fileID: 1599367537}
   - component: {fileID: 1599367536}
   - component: {fileID: 1599367535}
-  - component: {fileID: 1599367540}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -8140,22 +8153,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1599367540
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1599367534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8542fe6c10c0a7c469eba5be87af3d15, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Ball
-  radius: 0.5
-  airDensity: 0.64
-  boardEmitter: {fileID: 0}
-  PalaEmitter: {fileID: 0}
 --- !u!1 &1609860361
 GameObject:
   m_ObjectHideFlags: 0
