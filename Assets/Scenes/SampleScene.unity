@@ -2868,6 +2868,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 850011656}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &716300315
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2158568252610894426, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.82099
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.77243
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.39993
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
 --- !u!1 &723190431
 GameObject:
   m_ObjectHideFlags: 0
@@ -4777,6 +4834,10 @@ PrefabInstance:
     - target: {fileID: 5019489277206279637, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
       propertyPath: m_Name
       value: MesaTabletennis (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5019489277206279637, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
+      propertyPath: m_TagString
+      value: Board
       objectReference: {fileID: 0}
     - target: {fileID: 5684420464885329775, guid: df3d7cf28b56d034e855b9f7d4229cde, type: 3}
       propertyPath: m_LocalScale.x
@@ -8093,6 +8154,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Ball
   radius: 0.5
   airDensity: 0.64
+  boardEmitter: {fileID: 0}
+  PalaEmitter: {fileID: 0}
 --- !u!1 &1609860361
 GameObject:
   m_ObjectHideFlags: 0
@@ -8692,7 +8755,7 @@ GameObject:
   - component: {fileID: 1656931009}
   m_Layer: 0
   m_Name: Pala
-  m_TagString: Untagged
+  m_TagString: Pala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11484,6 +11547,7 @@ SceneRoots:
   - {fileID: 850011656}
   - {fileID: 419423675}
   - {fileID: 2008714901}
+  - {fileID: 716300315}
   - {fileID: 454367526}
   - {fileID: 2122748078}
   - {fileID: 2144868374}
