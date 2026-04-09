@@ -568,6 +568,103 @@ MonoBehaviour:
   m_OnGroundedChanged:
     m_PersistentCalls:
       m_Calls: []
+--- !u!1001 &215955894
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2158568252610894426, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_Name
+      value: SoundCrowd
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.0825558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.0825558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.0825558
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7321579264663424324, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: EventReference.Path
+      value: event:/freesound_community-crowd-yelling-49767
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: OverrideAttenuation
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: OverrideMaxDistance
+      value: 13.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: EventReference.Guid.Data1
+      value: -1951555413
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: EventReference.Guid.Data2
+      value: 1133659776
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: EventReference.Guid.Data3
+      value: 409262521
+      objectReference: {fileID: 0}
+    - target: {fileID: 8853246586555696598, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
+      propertyPath: EventReference.Guid.Data4
+      value: 2034175748
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 637842380baecb047ab3bb33c6bf4a1b, type: 3}
 --- !u!1 &243264657
 GameObject:
   m_ObjectHideFlags: 0
@@ -10924,7 +11021,7 @@ GameObject:
   - component: {fileID: 1985371421}
   m_Layer: 0
   m_Name: TabletennisRacket
-  m_TagString: Untagged
+  m_TagString: Pala
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11545,6 +11642,7 @@ SceneRoots:
   - {fileID: 419423675}
   - {fileID: 2008714901}
   - {fileID: 716300315}
+  - {fileID: 215955894}
   - {fileID: 454367526}
   - {fileID: 2122748078}
   - {fileID: 2144868374}

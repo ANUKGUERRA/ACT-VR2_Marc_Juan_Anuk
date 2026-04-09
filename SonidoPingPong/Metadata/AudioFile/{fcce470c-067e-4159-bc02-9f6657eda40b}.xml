@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.03.00">
+	<object class="AudioFile" id="{fcce470c-067e-4159-bc02-9f6657eda40b}">
+		<property name="assetPath">
+			<value>freesound_community-crowd-yelling-49767.mp3</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>24</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>191.352</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{fa2de5cf-3f9e-4e5f-a4a5-cf0e9a34e8b5}</destination>
+		</relationship>
+	</object>
+</objects>
