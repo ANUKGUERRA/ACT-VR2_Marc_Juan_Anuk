@@ -1,5 +1,7 @@
-using UnityEditor;
 using UnityEngine;
+
+#if UNITY_EDITOR
+using UnityEditor;
 
 [CustomEditor(typeof(TargetBounds))]
 public class DianaEditor : Editor
@@ -9,10 +11,10 @@ public class DianaEditor : Editor
         TargetBounds diana = (TargetBounds)target;
         Transform t = diana.transform;
 
-        Vector3 topLeft     = new Vector3(diana.min.x, 0, diana.min.z);
-        Vector3 topRight    = new Vector3(diana.max.x, 0, diana.min.z);
-        Vector3 botLeft     = new Vector3(diana.min.x, 0, diana.max.z);
-        Vector3 botRight    = new Vector3(diana.max.x, 0, diana.max.z);
+        Vector3 topLeft = new Vector3(diana.min.x, 0, diana.min.z);
+        Vector3 topRight = new Vector3(diana.max.x, 0, diana.min.z);
+        Vector3 botLeft = new Vector3(diana.min.x, 0, diana.max.z);
+        Vector3 botRight = new Vector3(diana.max.x, 0, diana.max.z);
 
         DrawPoint(diana, ref diana.min, t);
         DrawPoint(diana, ref diana.max, t);
@@ -32,6 +34,7 @@ public class DianaEditor : Editor
         }
     }
 }
+#endif
 
 public class TargetBounds : MonoBehaviour
 {
